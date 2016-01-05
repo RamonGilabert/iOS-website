@@ -179,7 +179,7 @@ body {
 /* Footer */
 
 #footer {
-  height: 175px;
+  height: 225px;
 }
 
 .contact-button {
@@ -187,21 +187,23 @@ body {
   letter-spacing: 1.4px;
   color: #18191E;
   text-transform: uppercase;
-  margin-top: 50%;
+  position: relative;
+  top: 37.5%;
   transform: translateX(-50%);
   -webkit-transition: background-color 0.7s;
   transition: background-color 0.7s;
 }
 
 #work {
-  margin-left: 25%;
+  left: 25%;
+  width: 100%;
   background-color: blue;
 }
 
 #contact {
-  background-color: red;
-  position: relative;
-  left: 25%;
+  right: 0%;
+  width: 100%;
+  background-color: blue;
 }
 
 /* Animations */
