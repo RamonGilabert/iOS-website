@@ -10,6 +10,22 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.separator {
+  width: 35px;
+  height: 2px;
+  background-color: #E7E7E7;
+  margin-top: 110px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.section {
+  width: 75%;
+  margin-top: 130px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Header section */
 
 #navigation ul {
@@ -109,33 +125,84 @@ body {
 
 /* Story */
 
-#story {
-  width: 75%;
-  margin-top: 130px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
 #story p {
-  font-size: 15px;
+  font-size: 15.5px;
   color: #6B6C71;
   line-height: 160%;
 }
 
-#first-separator {
-  width: 35px;
-  height: 3px;
+/* Open Source */
+
+#open-source {
+  margin-top: 85px;
+}
+
+#open-source h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #18191E;
+}
+
+#open-source p {
+  font-size: 15.5px;
+  color: #6B6C71;
+  line-height: 160%;
+}
+
+/* Projects */
+
+#projects {
+  margin-top: 85px;
+}
+
+#projects h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #18191E;
+}
+
+#projects p {
+  font-size: 15.5px;
+  color: #6B6C71;
+  line-height: 160%;
+}
+
+#bar {
+  width: 97.5%;
+  height: 2px;
   background-color: #E7E7E7;
-  margin-top: 130px;
+  margin-top: 110px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
-/* Open Source */
-
-/* Projects */
-
 /* Footer */
+
+#footer {
+  height: 175px;
+}
+
+.contact-button {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #18191E;
+  text-transform: uppercase;
+  margin-top: 50%;
+  transform: translateX(-50%);
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+
+#work {
+  margin-left: 25%;
+  background-color: blue;
+}
+
+#contact {
+  background-color: red;
+  position: relative;
+  left: 25%;
+}
 
 /* Animations */
 
