@@ -32,6 +32,36 @@ body {
   left: 0%;
 }
 
+#mouse {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 25px;
+  height: 42px;
+  position: absolute;
+  bottom: 12.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#mouse-indicator {
+  background-color: white;
+  width: 2px;
+  height: 5px;
+  margin-top: 7.5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#scroll {
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
 /* Story */
 
 /* Open Source */
