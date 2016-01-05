@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
 
-/* Main */
+/* General */
 
 body {
   width: 100vw;
@@ -11,6 +11,30 @@ body {
 }
 
 /* Header section */
+
+#navigation ul {
+  list-style-type: none;
+  position: absolute;
+  margin: 0 auto;
+  top: 44%;
+  transform: translateY(-50%);
+}
+
+#navigation ul li {
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  margin-top: 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+
+#navigation ul li:hover {
+  background-color: white;
+}
 
 #header-section {
   background-color: #161C22;
@@ -37,6 +61,10 @@ body {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
+  animation-name: mouse-animation;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 #mouse-body {
@@ -59,11 +87,11 @@ body {
 }
 
 #mouse p {
-  font-weight: 400;
-  letter-spacing: 2.5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 7.5px;
+  margin-top: 5px;
   color: white;
   font-size: 12px;
 }
@@ -75,3 +103,11 @@ body {
 /* Projects */
 
 /* Footer */
+
+/* Animations */
+
+@keyframes mouse-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
