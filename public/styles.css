@@ -28,6 +28,7 @@ body {
   border-radius: 100px;
   cursor: pointer;
   background-color: transparent;
+  font-size: 0px;
   -webkit-transition: background-color 0.7s;
   transition: background-color 0.7s;
 }
@@ -123,11 +124,11 @@ body {
 }
 
 @keyframes link-animation {
-  0% { margin-left: 40px; opacity: 0; }
+  0% { margin-left: 50px; opacity: 0; }
   100% { margin-left: 61px; opacity: 1; }
 }
 
 @keyframes link-animation-bye {
   0% { margin-left: 61px; opacity: 1; }
-  100% { margin-left: 40px; opacity: 0; }
+  100% { margin-left: 50px; opacity: 0; }
 }
