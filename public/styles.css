@@ -67,6 +67,7 @@ body {
   background-image: url("../resources/background-image.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #161C22;
   width: 100%;
   height: 92.5%;

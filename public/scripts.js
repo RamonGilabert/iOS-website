@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var forwardScroll = window.scrollY / 2;
 
     logo.style.transform = "translateY(" + slowScroll + "px)"
-    header.style.backgroundPosition = "0px " + forwardScroll + "px";
   }
 
   function convertPercentage(value) {
