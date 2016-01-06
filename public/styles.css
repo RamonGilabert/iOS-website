@@ -259,6 +259,7 @@ body {
 
   #mouse-indicator {
     border: 2px solid white;
+    border-radius: 3px;
     background-color: transparent;
     width: 14px;
     height: 24px;
