@@ -16,14 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
     links[i] = linksNodeList[i];
   }
 
-  console.log(isTouchDevice);
-
   if (isTouchDevice) {
     var mouseBody = document.getElementById("mouse-body");
     var text = document.getElementById("mouse").getElementsByTagName("p")[0];
 
     mouseBody.style.borderRadius = "4px";
-    text = "Drag";
+    text.textContent = "Drag";
   }
 
   links.forEach(function(element) {
@@ -57,6 +55,12 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   window.onscroll = function() {
+    if (window.scrollY >= convertPercentage("0%") && window.scrollY <= convertPercentage("100%")) {
+      window.requestAnimationFrame(updateParallax);
+    }
+  }
+
+  window.ondrag = function() {
     if (window.scrollY >= convertPercentage("0%") && window.scrollY <= convertPercentage("100%")) {
       window.requestAnimationFrame(updateParallax);
     }
