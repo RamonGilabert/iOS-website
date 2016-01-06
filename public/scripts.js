@@ -31,10 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     element.addEventListener("click", function() {
       var element = sections[links.indexOf(this)];
-      var step = element.offsetTop - window.scrollY - 75;
-      window.scrollBy(0, step);
+      var step = (element.offsetTop - window.scrollY - 75) / 25;
+      var value = element.offsetTop - window.scrollY - 75
 
-      // TODO: Make the real animation scrolling.
+      var interval = window.setInterval(function() {
+        if (value <= 0) {
+          window.clearInterval(interval);
+        } else {
+          window.scrollBy(0, step);
+          value -= step;
+          console.log(value);
+        }
+      }, 15);
     })
   });
 
