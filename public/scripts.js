@@ -38,9 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if (value <= 0) {
           window.clearInterval(interval);
         } else {
-          window.scrollBy(0, step);
+          window.requestAnimationFrame(function() {
+            window.scrollBy(0, step);
+          })
           value -= step;
-          console.log(value);
         }
       }, 15);
     })
