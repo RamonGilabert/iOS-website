@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
       var element = sections[links.indexOf(this)];
       var step = element.offsetTop - window.scrollY - 75;
       window.scrollBy(0, step);
+
+      // TODO: Make the real animation scrolling.
     })
   });
 
