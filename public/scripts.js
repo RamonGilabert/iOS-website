@@ -9,10 +9,21 @@ document.addEventListener("DOMContentLoaded", function() {
     projects = document.getElementById("projects"),
     footer = document.getElementById("footer"),
     links = [],
-    sections = [story, openSource, projects, footer];
+    sections = [story, openSource, projects, footer],
+    isTouchDevice = 'ontouchstart' in document.documentElement;
 
   for (var i = 0; i < linksNodeList.length; i++) {
     links[i] = linksNodeList[i];
+  }
+
+  console.log(isTouchDevice);
+
+  if (isTouchDevice) {
+    var mouseBody = document.getElementById("mouse-body");
+    var text = document.getElementById("mouse").getElementsByTagName("p")[0];
+
+    mouseBody.style.borderRadius = "4px";
+    text = "Drag";
   }
 
   links.forEach(function(element) {
@@ -38,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (value <= 0) {
           window.clearInterval(interval);
         } else {
-          window.requestAnimationFrame(function() {
-            window.scrollBy(0, step);
-          })
+          window.requestAnimationFrame(function() { window.scrollBy(0, step); })
           value -= step;
         }
       }, 15);

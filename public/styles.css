@@ -21,6 +21,7 @@ body {
 
 .section {
   width: 75%;
+  max-width: 800px;
   margin-top: 130px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -79,7 +80,8 @@ body {
 }
 
 #logo {
-  width: 300px;
+  width: 70vw;
+  max-width: 300px;
 }
 
 #triangles {
@@ -245,4 +247,28 @@ body {
 @keyframes link-animation-bye {
   0% { margin-left: 61px; opacity: 1; }
   100% { margin-left: 50px; opacity: 0; }
+}
+
+/* Responsivenes */
+
+@media (max-width: 575px) {
+
+  #navigation {
+    opacity: 0;
+  }
+
+  #footer ul li {
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  #work {
+    transform: translateX(0%);
+  }
+
+  #contact {
+    padding-top: 40px;
+    transform: translateX(0%);
+  }
 }
