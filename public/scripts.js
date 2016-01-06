@@ -34,11 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function updateParallax() {
     var slowScroll = -window.scrollY / 2;
-    var opacityValue = 1 - (window.scrollY / convertPercentage("85%"));
+    var forwardScroll = window.scrollY / 2;
 
     logo.style.transform = "translateY(" + slowScroll + "px)"
-    mouse.style.animationIterationCount = "0";
-    mouse.style.opacity = opacityValue;
+    header.style.backgroundPosition = "0px " + forwardScroll + "px";
   }
 
   function convertPercentage(value) {
